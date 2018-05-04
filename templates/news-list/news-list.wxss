@@ -11,20 +11,31 @@
   border-bottom: 2px solid #eee;
 }
 
+.header-name {
+  font-size: 35rpx;
+  font-weight: bold;
+}
+
+.header-more {
+  font-size: 30rpx;
+}
+
 .first-content {
   display: flex;
   align-items: center;
   height: 230rpx;
+  border-bottom: 2px solid #eee;
 }
 
 .first-img {
-  width: 275rpx;
+  width: 280rpx;
   height: 170rpx;
 }
 
 .first-right {
   display: flex;
   height: 170rpx;
+  margin-left: 20rpx;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -52,4 +63,25 @@
 .see {
   width: 50rpx;
   height: 50rpx;
+}
+
+.rest-content {
+  height: 85rpx;
+  line-height: 85rpx;
+  border-bottom: 2px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rest-content:last-child {
+  border-bottom: none;
+}
+
+.rest-des {
+  font-size: 30rpx;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

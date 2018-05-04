@@ -9,8 +9,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.94",
-	"appid": "wx907ab5028cf5f352",
-	"projectname": "litterSoft",
+	"appid": "touristappid",
+	"projectname": "wangcai",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

@@ -3,6 +3,6 @@
 <view class="index-container">
   <finance-type />
   <template is="white-space"></template>
-  <template is="news-list"></template>
+  <template is="news-list" data="{{news}}"></template>
   <template is="white-space"></template>
 </view>

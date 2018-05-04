@@ -1,8 +1,8 @@
 <template name="news-list">
   <view class="news-list-container">
     <view class="header">
-      <view class="name">论坛热帖</view>
-      <view class="more">更多</view>
+      <view class="header-name">论坛热帖</view>
+      <view class="header-more">更多</view>
     </view>
     <view class="first-content">
       <image class="first-img" src="https://static.rong360.com/pimg/pimg/99/99c2dfbe16191a86a03d0b0caa7dcffe7005477e.jpeg"></image>
@@ -15,6 +15,13 @@
             <image class="see" src="../../templates/news-list/images/see.png"></image>
           </view>
         </view>
+      </view>
+    </view>
+    <view class="rest-content">
+      <view class="rest-des">同样是月薪5千，为什么别人可以多攒一万元</view>
+      <view class="extra-right">
+        <view class="extra">8475</view>
+        <image class="see" src="../../templates/news-list/images/see.png"></image>
       </view>
     </view>
   </view>
