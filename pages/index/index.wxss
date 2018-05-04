@@ -1,0 +1,2 @@
+@import "../../templates/news-list/news-list.wxss";
+@import "../../components/finance-type/finance-type.wxss"

@@ -1,0 +1,5 @@
+<template name="news-list">
+  <view>
+    <text class="nihao"> 123 </text>
+  </view>
+</template>

@@ -1,0 +1,35 @@
+<view>
+  <view class="finance-type">
+    <view class="network-finance">
+      <view class="network-main">
+        <image class="network-img" src="./images/shouyi.png" mode="scaleToFill"></image>
+        <view class="network-text">
+          <text>
+            <text class="network-number">{{detail[0].rate}}</text>
+            <text class="network-percent">%</text>
+          </text>
+          <text class="network-des">今日平均收益</text>
+        </view>
+      </view>
+      <text>{{detail[0].name}}</text>
+    </view>
+    <view class="other-finance">
+      <view class="baobao-finance">
+        <view class="other-text">
+          <text>{{detail[1].name}}</text>
+          <text class="other-tag">{{detail[1].tag}}</text>
+        </view>
+        <text class="other-des">今日平均收益</text>
+        <text class="other-rate">{{detail[1].rate}}%</text>
+      </view>
+      <view class="bank-finance">
+        <view class="other-text">
+          <text>{{detail[2].name}}</text>
+          <text class="other-tag">{{detail[2].tag}}</text>
+        </view>
+        <text class="other-des">今日平均收益</text>
+        <text class="other-rate">{{detail[2].rate}}%</text>
+      </view>
+    </view>
+  </view>
+</view>

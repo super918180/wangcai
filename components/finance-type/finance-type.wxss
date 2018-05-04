@@ -1,0 +1,98 @@
+.finance-type {
+  color: #fff;
+  display: flex;
+  margin: 20rpx 10rpx;
+  height: 300rpx;
+  overflow: hidden;
+}
+
+.network-finance {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: #fe903f;
+  margin-right: 10rpx;
+}
+
+.network-main {
+  width: 100%;
+}
+
+.network-img {
+  width: 200rpx;
+  height: 200rpx;
+  display: block;
+  margin: 0 auto;
+  padding: 20rpx 0;
+}
+
+.network-text {
+  position: absolute;
+  top: 50rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.network-number {
+  font-size: 50rpx;
+}
+
+.network-percent {
+  font-size: 24rpx;
+}
+
+.network-des {
+  color: #ffd7c1;
+  font-size: 24rpx;
+}
+
+.other-finance {
+  width: 50%;
+}
+
+.baobao-finance {
+  background-color: #b68ce7;
+  height: 50%;
+  margin-bottom: 10rpx;
+}
+
+.bank-finance {
+  background-color: #ffb82e;
+  height: 50%;
+}
+
+.other-text {
+  display: flex;
+  align-items: center;
+  margin-left: 30rpx;
+  padding-top: 20rpx;
+}
+
+.other-tag {
+  display: block;
+  width: 120rpx;
+  height: 30rpx;
+  border: 2px solid #fff;
+  border-radius: 24rpx;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 30rpx;
+  margin-left: 20rpx;
+}
+
+.other-des {
+  color: #f6f2fc;
+  font-size: 24rpx;
+  margin-left: 30rpx;
+}
+
+.other-rate {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}

@@ -1,0 +1,3 @@
+<import src="../../templates/news-list/news-list.wxml" />
+<finance-type />
+<template is="news-list"></template>

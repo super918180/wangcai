@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/finance/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "汪汪理财"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#ff5b60",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./images/tabBar/home.png",
+        "selectedIconPath": "./images/tabBar/home-s.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/finance/index",
+        "iconPath": "./images/tabBar/money.png",
+        "selectedIconPath": "./images/tabBar/money-s.png",
+        "text": "理财"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}
