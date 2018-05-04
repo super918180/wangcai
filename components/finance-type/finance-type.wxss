@@ -1,7 +1,7 @@
 .finance-type {
   color: #fff;
   display: flex;
-  margin: 20rpx 10rpx;
+  margin: 20rpx 0;
   height: 300rpx;
   overflow: hidden;
 }

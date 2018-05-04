@@ -1,3 +1,8 @@
 <import src="../../templates/news-list/news-list.wxml" />
-<finance-type />
-<template is="news-list"></template>
+<import src="../../templates/white-space/white-space.wxml" />
+<view class="index-container">
+  <finance-type />
+  <template is="white-space"></template>
+  <template is="news-list"></template>
+  <template is="white-space"></template>
+</view>

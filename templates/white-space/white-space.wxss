@@ -1,0 +1,4 @@
+.white-space-container {
+  height: 20rpx;
+  background-color: #eee;
+}

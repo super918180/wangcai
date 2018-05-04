@@ -1,3 +1,55 @@
-.nihao{
-    color: red;
+.news-list-container {
+  color: #333;
+  padding: 0 20rpx;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  border-bottom: 2px solid #eee;
+}
+
+.first-content {
+  display: flex;
+  align-items: center;
+  height: 230rpx;
+}
+
+.first-img {
+  width: 275rpx;
+  height: 170rpx;
+}
+
+.first-right {
+  display: flex;
+  height: 170rpx;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.des {
+  font-size: 30rpx;
+}
+
+.extra-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.extra {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.extra-right {
+  display: flex;
+  align-items: center;
+}
+
+.see {
+  width: 50rpx;
+  height: 50rpx;
 }

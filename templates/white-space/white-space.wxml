@@ -1,0 +1,3 @@
+<template name="white-space">
+  <view class="white-space-container"></view>
+</template>

@@ -1,5 +1,21 @@
 <template name="news-list">
-  <view>
-    <text class="nihao"> 123 </text>
+  <view class="news-list-container">
+    <view class="header">
+      <view class="name">论坛热帖</view>
+      <view class="more">更多</view>
+    </view>
+    <view class="first-content">
+      <image class="first-img" src="https://static.rong360.com/pimg/pimg/99/99c2dfbe16191a86a03d0b0caa7dcffe7005477e.jpeg"></image>
+      <view class="first-right">
+        <view class="des">3亿债权去哪了 招财宝“违约”刚开始</view>
+        <view class="extra-container">
+          <view class="extra">2017-01-05</view>
+          <view class="extra-right">
+            <view class="extra">12447</view>
+            <image class="see" src="../../templates/news-list/images/see.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
   </view>
 </template>
