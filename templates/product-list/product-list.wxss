@@ -1,0 +1,21 @@
+.news-list-container {
+  color: #333;
+  padding: 0 20rpx;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  border-bottom: 2px solid #eee;
+}
+
+.header-name {
+  font-size: 35rpx;
+  font-weight: bold;
+}
+
+.header-more {
+  font-size: 30rpx;
+}

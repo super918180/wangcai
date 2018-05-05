@@ -1,4 +1,5 @@
 <import src="../../templates/news-list/news-list.wxml" />
+<import src="../../templates/product-list/product-list.wxml" />
 <import src="../../templates/white-space/white-space.wxml" />
 <view class="index-container">
   <finance-type />
@@ -12,4 +13,6 @@
   <template is="news-list" data="{{...profession}}" />
   <template is="white-space" />
   <template is="news-list" data="{{...answer}}" />
+  <template is="white-space" />
+  <template is="product-list" data="{{...product}}" />
 </view>

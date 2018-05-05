@@ -1,0 +1,32 @@
+<template name="product-list">
+  <view class="product-list-container">
+    <view class="header">
+      <view class="header-name">{{name}}</view>
+      <view class="header-more">更多</view>
+    </view>
+    <block wx:key wx:for="{{data}}">
+      <view>
+        <view>
+          <image />
+          <view>
+            <view>
+              <view>和信贷</view>
+              <view>股权上市</view>
+            </view>
+            <view>江西银行存管</view>
+          </view>
+        </view>
+        <view>
+          <view>
+            <view></view>
+            <view>网友评分</view>
+          </view>
+          <view>
+            <view></view>
+            <view>平均收益</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</template>
