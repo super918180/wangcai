@@ -2,7 +2,14 @@
 <import src="../../templates/white-space/white-space.wxml" />
 <view class="index-container">
   <finance-type />
-  <template is="white-space"></template>
-  <template is="news-list" data="{{news}}"></template>
-  <template is="white-space"></template>
+  <template is="white-space" />
+  <finance-card />
+  <template is="white-space" />
+  <template is="news-list" data="{{...news}}" />
+  <template is="white-space" />
+  <template is="news-list" data="{{...licai}}" />
+  <template is="white-space" />
+  <template is="news-list" data="{{...profession}}" />
+  <template is="white-space" />
+  <template is="news-list" data="{{...answer}}" />
 </view>

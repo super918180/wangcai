@@ -4,23 +4,23 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
-    news: []
-  },
+  data: {},
   onReady: function () {
-    this.getListOfNews();
+    this.getNewsListAll();
   },
-  getListOfNews: function () {
+  getNewsListAll: function () {
     wx.request({
-      url: config.url + '/list',
-      method: 'POST',
-      data: {
-        size: '5',
-        type: 'news'
-      },
-      success: function (res) {
-        console.log(res.data.data)
+      url: config.url + '/getNewsListAll',
+      success: (res) => {
+        this.setData(this.formatNewsData(res.data.data));
       }
     })
+  },
+  formatNewsData: function (data) {
+    let formatObj = {};
+    for (let i = 0; i < data.length; i++) {
+      formatObj[data[i].type] = data[i];
+    }
+    return formatObj;
   }
 })

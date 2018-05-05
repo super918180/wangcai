@@ -1,0 +1,18 @@
+<view class="finance-card">
+  <view class="finance-card-content">
+    <view class="finance-card-title">
+      <image src="{{detail.image}}" />
+      <view class="finance-card-name">{{detail.name}}</view>
+    </view>
+    <view class="finance_card_body">
+      <view class="finance_card_content">
+        <view class="finance-card-money-des">{{detail.des}}</view>
+        <view class="finance-card-money">{{detail.rate}}</view>
+      </view>
+      <view>
+        <view class="finance-card-button">立即申请</view>
+      </view>
+    </view>
+    <image class="recommend" src="./images/recommend.png" />
+  </view>
+</view>

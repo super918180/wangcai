@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "finance-type": "../../components/finance-type/finance-type"
+    "finance-type": "../../components/finance-type/finance-type",
+    "finance-card": "../../components/finance-card/finance-card"
   }
 }
