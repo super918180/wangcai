@@ -15,4 +15,5 @@
   <template is="news-list" data="{{...answer}}" />
   <template is="white-space" />
   <template is="product-list" data="{{...product}}" />
+  <template is="white-space" />
 </view>

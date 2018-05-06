@@ -7,12 +7,26 @@ Page({
   data: {},
   onReady: function () {
     this.getNewsListAll();
+    this.getProductRecommend();
   },
   getNewsListAll: function () {
     wx.request({
       url: config.url + '/getNewsListAll',
       success: (res) => {
         this.setData(this.formatNewsData(res.data.data));
+      }
+    })
+  },
+  getProductRecommend: function () {
+    wx.request({
+      url: config.url + '/getProductRecommend',
+      success: (res) => {
+        this.setData({
+          product: {
+            name: "人气排行榜",
+            data: res.data.data
+          }
+        });
       }
     })
   },

@@ -1,30 +1,26 @@
 <template name="product-list">
   <view class="product-list-container">
-    <view class="header">
+    <view class="product-header">
       <view class="header-name">{{name}}</view>
       <view class="header-more">更多</view>
     </view>
     <block wx:key wx:for="{{data}}">
-      <view>
-        <view>
-          <image />
-          <view>
-            <view>
-              <view>和信贷</view>
-              <view>股权上市</view>
+      <view class="product-body">
+        <view class="product-line-left">
+          <image class="product-icon" src="{{item.image}}" />
+          <view class="product-text">
+            <view class="flex product-name-tag">
+              <view class="product-name">{{item.name}}</view>
+              <block wx:key wx:for="{{item.tag}}">
+                <view class="product-tag">{{item}}</view>
+              </block>
             </view>
-            <view>江西银行存管</view>
+            <view class="product-des">{{item.des}}</view>
           </view>
         </view>
-        <view>
-          <view>
-            <view></view>
-            <view>网友评分</view>
-          </view>
-          <view>
-            <view></view>
-            <view>平均收益</view>
-          </view>
+        <view class="product-line-right">
+          <view class="product-rate">{{item.rate}}</view>
+          <view class="product-des">平均收益</view>
         </view>
       </view>
     </block>
