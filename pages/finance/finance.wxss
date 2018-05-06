@@ -1,5 +1,4 @@
 @import "../../templates/product-list/product-list.wxss";
-@import "../../templates/white-space/white-space.wxss";
 .flex {
   display: flex;
   justify-content: center;

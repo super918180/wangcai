@@ -1,0 +1,64 @@
+<import src="../../templates/white-space/white-space.wxml" />
+<view class="details-container">
+  <view class="header">
+    <view class="product-body">
+      <view class="product-line-left">
+        <image class="product-icon" src="{{image}}" />
+        <view class="product-text">
+          <view class="flex product-name-tag">
+            <view class="product-name">{{name}}</view>
+            <block wx:key wx:for="{{tag}}">
+              <view class="product-tag">{{item}}</view>
+            </block>
+          </view>
+          <view class="product-des">{{des}}</view>
+        </view>
+      </view>
+      <view class="product-line-right">
+        <view class="product-rate">{{rate}}</view>
+        <view class="product-des">平均收益</view>
+      </view>
+    </view>
+  </view>
+  <template is="white-space" />
+  <view class="info-block">
+    <view class="info-header">平台信息</view>
+    <view class="info-body">
+      <view>公司名称：{{info.name}}</view>
+      <view>注册资金：{{info.money}}</view>
+      <view>成立时间：{{info.begin}}</view>
+      <view>所在地区：{{info.area}}</view>
+      <view>银行存管：{{info.bank}}</view>
+    </view>
+  </view>
+  <template is="white-space" />
+  <view class="info-block">
+    <view class="info-header">平台介绍</view>
+    <view class="info-body">{{introduce}}</view>
+  </view>
+  <template is="white-space" />
+  <view class="info-block">
+    <view class="info-header">最新产品</view>
+    <block wx:key wx:for="{{product}}">
+      <view class="item-header">
+        <view class="item-name">{{item.name}}</view>
+        <view class="item-go" data-link="{{item.link}}" bindtap="getLink">去理财</view>
+      </view>
+      <view class="item-body">
+        <view class="item-body-one">
+          <view class="product-rate">{{item.rate}}</view>
+          <view class="product-des">年化收益</view>
+        </view>
+        <view class="item-body-one">
+          <view class="product-rate">{{item.time}}</view>
+          <view class="product-des">理财期限</view>
+        </view>
+        <view class="item-body-one">
+          <view class="product-rate">{{item.momey}}</view>
+          <view class="product-des">最低起投</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <template is="white-space" />
+</view>

@@ -1,6 +1,5 @@
 @import "../../templates/news-list/news-list.wxss";
 @import "../../templates/product-list/product-list.wxss";
-@import "../../templates/white-space/white-space.wxss";
 @import "../../components/finance-type/finance-type.wxss";
 .index-container {
 }
