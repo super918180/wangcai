@@ -5,8 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    index: 0,
-    sortType: ["默认排序", "收益降序", "收益升序"]
+    sortIndex: 0,
+    sortType: ["默认排序", "收益降序", "收益升序"],
+    filterIndex: 0,
+    filterType: ["全部", "上市公司", "国有企业", "银行"]
   },
 
   /**
@@ -76,9 +78,14 @@ Page({
       }
     })
   },
-  bindPickerChange: function (e) {
+  bindSortPickerChange: function (e) {
     this.setData({
-      index: e.detail.value
+      sortIndex: e.detail.value
+    })
+  },
+  bindFilterPickerChange: function (e) {
+    this.setData({
+      filterIndex: e.detail.value
     })
   }
 })

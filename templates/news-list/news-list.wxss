@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   height: 80rpx;
-  border-bottom: 2px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .header-name {
@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   height: 230rpx;
-  border-bottom: 2px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .first-img {
@@ -69,7 +69,7 @@
 .rest-content {
   height: 85rpx;
   line-height: 85rpx;
-  border-bottom: 2px solid #eee;
+  border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
   align-items: center;

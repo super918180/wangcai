@@ -1,12 +1,21 @@
 <import src="../../templates/product-list/product-list.wxml" />
 <import src="../../templates/white-space/white-space.wxml" />
 <view class="finance-container">
-    <picker bindchange="bindPickerChange" value="{{index}}" range="{{sortType}}">
-        <view class="picker">
-            <view class="picker-text">{{sortType[index]}}</view>
-            <image class="picker-image" src="./images/down.png"></image>
-        </view>
+  <view class="picker-container">
+    <picker bindchange="bindSortPickerChange" value="{{sortIndex}}" range="{{sortType}}">
+      <view class="picker picker-sort">
+        <view class="picker-text">{{"排序："+sortType[sortIndex]}}</view>
+        <image class="picker-image" src="./images/down.png"></image>
+      </view>
     </picker>
-    <template is="product-list" data="{{...product}}" />
-     <template is="white-space" />
+    <picker bindchange="bindFilterPickerChange" value="{{filterIndex}}" range="{{filterType}}">
+      <view class="picker picker-filter">
+        <view class="picker-text">{{"筛选："+filterType[filterIndex]}}</view>
+        <image class="picker-image" src="./images/down.png"></image>
+      </view>
+    </picker>
+  </view>
+  <template is="white-space" />
+  <template is="product-list" data="{{...product}}" />
+  <template is="white-space" />
 </view>
