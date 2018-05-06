@@ -1,17 +1,23 @@
 @import "../../templates/product-list/product-list.wxss";
 @import "../../templates/white-space/white-space.wxss";
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .picker {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   height: 80rpx;
   border-bottom: 1px solid #eee;
+  margin: 0 20rpx;
 }
 
 .picker-text {
   color: #ff5700;
   font-size: 36rpx;
-  margin: 0 20rpx 0 30rpx;
 }
 
 .picker-image {

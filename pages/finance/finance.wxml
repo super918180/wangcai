@@ -4,14 +4,20 @@
   <view class="picker-container">
     <picker bindchange="bindSortPickerChange" value="{{sortIndex}}" range="{{sortType}}">
       <view class="picker picker-sort">
-        <view class="picker-text">{{"排序："+sortType[sortIndex]}}</view>
-        <image class="picker-image" src="./images/down.png"></image>
+        <view class="picker-text">排序：</view>
+        <view class="flex">
+          <view class="picker-text">{{sortType[sortIndex]}}</view>
+          <image class="picker-image" src="./images/down.png"></image>
+        </view>
       </view>
     </picker>
     <picker bindchange="bindFilterPickerChange" value="{{filterIndex}}" range="{{filterType}}">
       <view class="picker picker-filter">
-        <view class="picker-text">{{"筛选："+filterType[filterIndex]}}</view>
-        <image class="picker-image" src="./images/down.png"></image>
+        <view class="picker-text">筛选：</view>
+        <view class="flex">
+          <view class="picker-text">{{filterType[filterIndex]}}</view>
+          <image class="picker-image" src="./images/down.png"></image>
+        </view>
       </view>
     </picker>
   </view>
