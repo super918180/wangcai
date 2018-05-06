@@ -32,6 +32,10 @@
   border-bottom: 2px solid #eee;
 }
 
+.product-body:last-child {
+  border-bottom: none;
+}
+
 .product-line-left {
   display: flex;
   margin: 30rpx 0;

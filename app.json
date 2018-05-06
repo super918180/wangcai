@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/finance/finance",
+    "pages/index/index",
     "pages/find/find",
     "pages/user/user"
   ],

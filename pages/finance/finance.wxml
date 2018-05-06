@@ -1,0 +1,12 @@
+<import src="../../templates/product-list/product-list.wxml" />
+<import src="../../templates/white-space/white-space.wxml" />
+<view class="finance-container">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{sortType}}">
+        <view class="picker">
+            <view class="picker-text">{{sortType[index]}}</view>
+            <image class="picker-image" src="./images/down.png"></image>
+        </view>
+    </picker>
+    <template is="product-list" data="{{...product}}" />
+     <template is="white-space" />
+</view>

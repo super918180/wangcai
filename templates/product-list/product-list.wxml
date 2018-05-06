@@ -1,6 +1,6 @@
 <template name="product-list">
   <view class="product-list-container">
-    <view class="product-header">
+    <view wx:if="{{name}}" class="product-header">
       <view class="header-name">{{name}}</view>
       <view class="header-more">更多</view>
     </view>
