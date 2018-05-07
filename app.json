@@ -3,7 +3,6 @@
     "pages/index/index",
     "pages/finance/finance",
     "pages/details/details",
-    "pages/find/find",
     "pages/user/user"
   ],
   "window": {
@@ -24,12 +23,6 @@
         "iconPath": "./images/tabBar/money.png",
         "selectedIconPath": "./images/tabBar/money-s.png",
         "text": "理财"
-      },
-      {
-        "pagePath": "pages/find/find",
-        "iconPath": "./images/tabBar/find.png",
-        "selectedIconPath": "./images/tabBar/find-s.png",
-        "text": "发现"
       },
       {
         "pagePath": "pages/user/user",

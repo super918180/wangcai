@@ -1,0 +1,19 @@
+<view class="user-contaier">
+  <view class="header"></view>
+  <view class="body">
+    <view>
+      <view>
+        <image></image>
+        <view>消费记录</view>
+      </view>
+      <image></image>
+    </view>
+    <view>
+      <view>
+        <image></image>
+        <view>在线客服</view>
+      </view>
+      <image></image>
+    </view>
+  </view>
+</view>
