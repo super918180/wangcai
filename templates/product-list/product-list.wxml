@@ -8,20 +8,22 @@
       <navigator url="{{'/pages/details/details?id='+item.id}}">
         <view class="product-body">
           <view class="product-line-left">
-            <image class="product-icon" src="{{item.image}}" />
+            <image class="product-icon" src="{{item.level===1?'../../images/product-list/gold.png':item.image}}" />
             <view class="product-text">
               <view class="flex product-name-tag">
-                <view class="product-name">{{item.name}}</view>
+                <view class="{{'product-name'+(item.level===1?' gold':'')}}">
+                  {{item.level===1?'会员专享':item.name}}
+                </view>
                 <block wx:key wx:for="{{item.tag}}">
                   <view class="product-tag">{{item}}</view>
                 </block>
               </view>
-              <view class="product-des">{{item.des}}</view>
+              <view class="{{'product-des'+(item.level===1?' gold':'')}}">{{item.des}}</view>
             </view>
           </view>
           <view class="product-line-right">
-            <view class="product-rate">{{item.rate}}</view>
-            <view class="product-des">平均收益</view>
+            <view class="{{'product-rate'+(item.level===1?' gold':'')}}">{{item.rate}}</view>
+            <view class="{{'product-des'+(item.level===1?' gold':'')}}">平均收益</view>
           </view>
         </view>
       </navigator>

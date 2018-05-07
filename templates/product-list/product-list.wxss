@@ -87,3 +87,7 @@
 .product-rate {
   color: #ff5700;
 }
+
+.gold {
+  color: #b4955d;
+}

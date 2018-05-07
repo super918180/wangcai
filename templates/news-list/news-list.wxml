@@ -14,7 +14,7 @@
               <view class="extra">{{item.time}}</view>
               <view class="extra-right">
                 <view class="extra">{{item.see}}</view>
-                <image class="see" src="../../templates/news-list/images/see.png"></image>
+                <image class="see" src="../../images/news-list/see.png"></image>
               </view>
             </view>
           </view>
@@ -25,7 +25,7 @@
           <view class="rest-des">{{item.text}}</view>
           <view class="extra-right">
             <view class="extra">{{item.see}}</view>
-            <image class="see" src="../../templates/news-list/images/see.png"></image>
+            <image class="see" src="../../images/news-list/see.png"></image>
           </view>
         </view>
       </block>
