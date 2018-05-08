@@ -1,13 +1,24 @@
+const app = getApp();
 const config = require('../../config/config');
 Page({
 
   /**
    * 页面的初始数据
    */
-  data: {},
+  data: {
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
+  },
   onReady: function () {
+    this.getUserInfo();
     this.getNewsListAll();
     this.getProductRecommend();
+  },
+  getUserInfo: function () {
+    wx.getUserInfo({
+      success: res => {
+        app.globalData.userInfo = res.userInfo
+      }
+    })
   },
   getNewsListAll: function () {
     wx.request({

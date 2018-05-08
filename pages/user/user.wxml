@@ -1,19 +1,35 @@
 <view class="user-contaier">
-  <view class="header"></view>
+  <view class="header-contaier">
+    <view class="header">
+      <view class="user-info">
+        <image class="user-vip" src="./images/vip.png"></image>
+        <image class="user-image" src="{{avatarUrl}}"></image>
+        <view class="user-name">{{name}}</view>
+      </view>
+      <view class="split"></view>
+      <view class="time-info">
+        <view>黄金会员卡</view>
+        <view class="time-right">
+          <view>期限：</view>
+          <view>永久</view>
+        </view>
+      </view>
+    </view>
+  </view>
   <view class="body">
-    <view>
-      <view>
-        <image></image>
+    <view class="list">
+      <view class="list-left">
+        <image class="list-icon" src="./images/consume.png"></image>
         <view>消费记录</view>
       </view>
-      <image></image>
+      <image class="list-icon-right" src="./images/right.png"></image>
     </view>
-    <view>
-      <view>
-        <image></image>
+    <view class="list">
+      <view class="list-left">
+        <image class="list-icon" src="./images/service.png"></image>
         <view>在线客服</view>
       </view>
-      <image></image>
+      <image class="list-icon-right" src="./images/right.png"></image>
     </view>
   </view>
 </view>

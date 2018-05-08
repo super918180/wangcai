@@ -13,7 +13,6 @@
 
 .header-name {
   font-size: 35rpx;
-  font-weight: bold;
 }
 
 .header-more {

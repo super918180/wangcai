@@ -1,0 +1,91 @@
+.header-contaier {
+  background: #303030;
+  padding: 80rpx 40rpx 0 40rpx;
+  color: #7C5319;
+  font-size: 30rpx;
+}
+
+.header {
+  background: #d7ad7c;
+  height: 250rpx;
+  border-radius: 10rpx 10rpx 0 0;
+  position: relative;
+}
+
+.split {
+  height: 2rpx;
+  background: #9e8250;
+  position: absolute;
+  top: 60%;
+  width: 100%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: -40rpx;
+}
+
+.time-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 30rpx;
+}
+
+.time-right {
+  display: flex;
+}
+
+.user-vip {
+  position: absolute;
+  width: 60rpx;
+  height: 40rpx;
+  transform: translateX(-30rpx) rotate(-30deg);
+  top: -20rpx;
+}
+
+.user-image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.user-name {
+  margin-top: 20rpx;
+}
+
+.body {
+  font-size: 30rpx;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  margin: 0 30rpx;
+  border-bottom: 1px solid #eee;
+}
+
+.list-left {
+  display: flex;
+  align-items: center;
+}
+
+.list-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+.list-icon-right {
+  width: 30rpx;
+  height: 30rpx;
+}
