@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/finance/finance",
     "pages/details/details",
+    "pages/article/article",
     "pages/user/user"
   ],
   "window": {

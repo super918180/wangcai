@@ -6,28 +6,32 @@
     </view>
     <block wx:key wx:for="{{data}}">
       <block wx:if="{{index===0}}">
-        <view class="first-content">
-          <image class="first-img" src="{{item.image}}"></image>
-          <view class="first-right">
-            <view class="des">{{item.text}}</view>
-            <view class="extra-container">
-              <view class="extra">{{item.time}}</view>
-              <view class="extra-right">
-                <view class="extra">{{item.see}}</view>
-                <image class="see" src="../../images/news-list/see.png"></image>
+        <navigator url="{{'/pages/article/article?id='+item.id}}">
+          <view class="first-content">
+            <image class="first-img" src="{{item.image}}"></image>
+            <view class="first-right">
+              <view class="des">{{item.text}}</view>
+              <view class="extra-container">
+                <view class="extra">{{item.time}}</view>
+                <view class="extra-right">
+                  <view class="extra">{{item.see}}</view>
+                  <image class="see" src="../../images/news-list/see.png"></image>
+                </view>
               </view>
             </view>
           </view>
-        </view>
+        </navigator>
       </block>
       <block wx:else>
-        <view class="rest-content">
-          <view class="rest-des">{{item.text}}</view>
-          <view class="extra-right">
-            <view class="extra">{{item.see}}</view>
-            <image class="see" src="../../images/news-list/see.png"></image>
+        <navigator url="{{'/pages/article/article?id='+item.id}}">
+          <view class="rest-content">
+            <view class="rest-des">{{item.text}}</view>
+            <view class="extra-right">
+              <view class="extra">{{item.see}}</view>
+              <image class="see" src="../../images/news-list/see.png"></image>
+            </view>
           </view>
-        </view>
+        </navigator>
       </block>
     </block>
   </view>

@@ -1,0 +1,21 @@
+.article-container {
+  margin: 30rpx;
+}
+
+.title {
+  font-size: 42rpx;
+}
+
+.time {
+  font-size: 24rpx;
+  color: #999999;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  font-size: 30rpx;
+}
